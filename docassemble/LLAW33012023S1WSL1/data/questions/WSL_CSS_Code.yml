@@ -1,0 +1,16 @@
+---
+include:
+  - WSL_Welcome_And_End_Screen.yml
+---
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with Westside Community Lawyers (WSL)
+    </i></small></cite>
+    </div>
+    </div>
+---

@@ -1,0 +1,90 @@
+---
+objects:
+  - WSLdisplay_data: DAList.using(there_are_any=True, auto_gather=False)
+  - WSLdisplay_specific_gender: DAList.using(there_are_any=True, auto_gather=False)
+  - WSLdisplay_indigenous: DAList.using(there_are_any=True, auto_gather=False)
+  - WSLdisplay_leftovers: DAList.using(there_are_any=True, auto_gather=False)
+---
+# Gender code for display data
+code: |
+  WSLdisplay_data.clear()
+  
+  # Filtering for gender
+  for WSLitem in WSL_Services:
+    # Set an added flag.  We switch this once we've added a record
+    # for the first time
+    WSLadded = False
+    # Only add if gender matches
+    if WSLgender in WSLitem['gender']:
+      if WSLindigenous in WSLitem['indigenous']:
+        #...and if legal issue matches
+        # We can have selected more than one legal issue.  We need to check each one
+        for WSLselected_issue in WSLhardissue.true_values():
+          if WSLselected_issue in (WSLitem['hard issue'] or []) or 'Other' in (WSLitem['hard issue'] or []):
+            # Specialist service gets added regardless of location
+            if ( 
+                  ( WSLselected_issue == 'Emotional' or 
+                    WSLselected_issue == 'Relationship' or 
+                    WSLselected_issue == 'Financial' or 
+                    WSLselected_issue == 'Homelessness' ) and
+                  ( WSLselected_issue in WSLitem['hard issue'])
+                ):
+              if WSLadded == False:
+                WSLdisplay_data.append(WSLitem)
+                WSLitem['added'] = 'specialist'
+                WSLadded = True
+            else: 
+              # Non-specialist services are added only if in the location.
+              for WSLselected_location in WSLlocation.true_values():
+                if WSLselected_location in WSLitem['location']:
+                  # Now we can add.
+                  # First we need to check it hasn't already been added
+                  if WSLadded == False:
+                    WSLdisplay_data.append(WSLitem)
+                    WSLitem['added'] = 'non-specialist'
+                    WSLadded = True
+      
+  WSLdisplay_data.gathered = True
+---
+# Display services for specific gender only
+# 1. A gender has been specified
+# 2. The service only caters for that gender
+code: |
+  WSLdisplay_specific_gender.clear()
+  for WSLitem in WSL_Services:
+    if (
+        (len(WSLitem['gender']) == 1) or ( len(WSLitem['gender']) == 2 and 'Other' in WSLitem['gender']) and
+        ( WSLgender in WSLitem['gender'])
+       ):
+      WSLdisplay_specific_gender.append(WSLitem)
+      WSLitem['displayed']
+      
+  WSLdisplay_specific_gender.gathered = True
+---
+# Display services for indigenous people first
+code: |
+  WSLdisplay_indigenous.clear()
+  for WSLitem in WSL_Services:
+    if (
+          ( WSLindigenous == 'Yes' or
+            WSLindigenous == 'Do not wish to say' ) and 
+          ( not 'No' in WSLitem['indigenous'] )
+        ):
+      WSLdisplay_indigenous.append(WSLitem)
+      WSLitem['displayed']
+
+  WSLdisplay_indigenous.gathered = True
+---
+# Display the generic list - this contains everything else to
+# be displayed that hasn't already been displayed.
+code: |
+  WSLdisplay_leftovers.clear()
+  for WSLitem in WSL_Services:
+    if not WSLitem.item('displayed') and WSLitem in WSLdisplay_data:
+      WSLdisplay_leftovers.append(WSLitem)
+      
+  WSLdisplay_leftovers.gathered = True
+---
+code: |
+  WSL_Services[i]['displayed'] = True
+---
