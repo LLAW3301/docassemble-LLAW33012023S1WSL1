@@ -1,0 +1,87 @@
+---
+# location question
+question: Where are you located?
+subquestion: |
+  Please select the location or locations that you are looking for services in.
+  
+  You may select more than one location.
+  
+fields:
+  - no label: WSLlocation
+    datatype: checkboxes
+    choices:
+      - <b>Metropolitan Adelaide</b><br><ul class="a"><li>Charles Sturt</li><li>Port Adelaide Enfield</li></ul>: Metropolitan Adelaide
+      - <b>Barossa Region</b><br><ul class="a"><li>Light</li><li>Lyndoch</li><li>Nurriootpa</li><li>Tanunda</li></ul>: Barossa Region
+      - <b>Clare Region</b><br><ul class="a"><li>Clare</li><li>Gilbert Valley</li><li>Goyder</li><li>Jamestown</li><li>Mallala</li><li>Wakefield</li></ul>: Clare Region
+      - <b>Yorke Peninsula</b><br><ul class="a"><li>Barunga West</li><li>Wallaroo</li><li>Kadina</li><li>Moonta</li></ul>: Yorke Peninsula
+      - <b>Eyre Peninsula</b><br><ul class="a"><li>Ceduna</li><li>Cleve</li><li>Elliston</li><li>Franklin Harbour</li><li>Kimba</li><li>Le Hunte</li><li>Port Lincoln</li></ul>: Eyre Peninsula
+      - <b>Flinders Rangers Region</b><br><ul class="a"><li>Flinders Rangers</li><li>Mt Remarkable</li><li>Peterborough</li><li>Port Augusta</li><li>Port Pirie</li><li>Whyalla</li></ul>: Flinders Rangers Region
+      - <b>Outback</b><br><ul class="a"><li>APY Lands</li><li>Cooper Pedy</li><li>Roxby Downs</li><li>Nullabor</li></ul>: Outback
+    none of the above: False
+right: |
+ [FILE mapfinal.png, 400px]
+progress: 20
+action buttons:
+  - label: Exit
+    action: https://westsidelawyers.net/
+    color: warning
+    icon: sign-out-alt
+---
+question: What type of hardship are you experiencing?
+subquestion: |
+  
+  You may select more than one hardship.
+
+fields:
+  - no label: WSLhardissue
+    datatype: checkboxes
+    choices:
+      - Emotional Hardship: Emotional
+      - Relationships (Divorce, Domestic violence): Relationship
+      - Financial (personal debt, bankrupcy, mortgage): Financial
+      - Homelessness: Homelessness
+      - Other: Other
+    none of the above: False
+
+progress: 40
+action buttons:
+  - label: Exit
+    action: https://westsidelawyers.net/
+    color: warning
+    icon: sign-out-alt
+---
+question: What is your gender?
+fields:
+  - no label: WSLgender
+    datatype: radio
+    choices:
+      - "Male": Male
+        image: male
+      - "Female": Female
+        image: female
+      - "Other": other
+        image: other
+
+progress: 60
+action buttons:
+  - label: Exit
+    action: https://westsidelawyers.net/
+    color: warning
+    icon: sign-out-alt
+---
+question: Do you identify as Aboriginal or Torres Strait Islander?
+fields:
+  - no label: WSLindigenous
+    datatype: radio
+    choices:
+      - Yes
+      - No
+      - Do not wish to say
+
+progress: 80
+action buttons:
+  - label: Exit
+    action: https://westsidelawyers.net/
+    color: warning
+    icon: sign-out-alt
+---

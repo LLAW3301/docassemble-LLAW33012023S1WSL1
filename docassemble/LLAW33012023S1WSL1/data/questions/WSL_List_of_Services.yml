@@ -1,0 +1,185 @@
+---  
+# Dictionary containing information regarding the Services provided by WSL #
+variable name: WSL_Services
+use objects: True
+data:
+  - name: "[Hutt St Centre](https://www.huttstcentre.org.au/)"
+    location:
+      - -	Adelaide Metropolitan
+    phone: 
+      - (08) 8418 2500
+    address:
+      - -	252-262 Hutt Street, Adelaide SA 5000
+    hard issue:
+      - Homelessness
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[Relationships Australia](https://www.rasa.org.au/)"
+    location:
+      - Adelaide Metropolitan
+      -	Eyre Peninsula 
+    phone:
+      - Adelaide metropolitan (08) 8418 2500
+      - Eyre Peninsula 1800 310 310
+    address: 
+      - Adelaide metropolitan; 151 South Terrace, Adelaide 
+      - Eyre Peninsula; 54 Commercial Road, Port Augusta 
+    hard issue:
+      - Relationship
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[Beyond Blue](https://www.beyondblue.org.au/)"
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1300 22 4636
+    address:
+      - Online
+    hard issue:
+      - Emotional
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[Homelessness Legal Service](https://www.justicenet.org.au/what-we-do/homeless-legal)"
+    location:
+      - Adelaide Metropolitan
+    phone: 
+      - (08) 8232 2282 (Catherine House) outreach times by appointment
+    address: 
+      - Hutt Street Centre, 258 Hutt Street, Adelaide SA 5000 (Outreach times: 10am-12pm Monday)
+    hard issue:
+      - Homelessness
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[JusticeNetSA](https://www.justicenet.org.au)"
+    location:
+      - North
+      - East
+      - South
+      - West
+      - Central
+    phone:
+      - (08) 8313 5005
+    address:
+      - Not Available (Ring number to inquire)
+    hard issue: 
+      - Financial
+      - Other
+    gender:
+      - Male
+      - Female
+      - Other
+    indigenous: 
+      - No
+      - Yes
+      - Do not wish to say
+  - name: "[Inspiring Determination Independence Growth and Opportunities (INDIGO)](https://www.wlssa.org.au/copy-of-the-womens-specialist-progr)"
+    location:
+      - Adelaide Metropolitan
+    phone: 
+      - 1300 655 037
+    address: 
+      - Level 7/45 Grenfell Street, Adelaide SA 5000
+    hard issue:
+      - Relationship
+    gender:
+      - Female
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[Family Violence Legal Service Aboriginal Corporation SA](http://www.fvlsac.org.au)"
+    location:
+      - Clare Region
+    phone: 
+      - Port Augusta Office, Freecall 1800 111 052 or Telephone (08) 8641 2195
+      - Port Lincoln Office, Freecall 1800 309 912 or Telephone (08) 8683 1896
+      - Ceduna Office, Freecall 1800 839 059 or Telephone (08) 8625 3800 
+    address:
+      - 26 Jervois Street Port Augusta SA 5700 
+      - 56 St Andrews Terrace Port Lincoln SA 5606 
+      - 17 McKenzie Street Ceduna SA 5700
+    hard issue:
+      - Relationship
+      - Other
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - Do not wish to say
+  - name: "[Consumer Credit Law Centre South Australia](http://consumercreditsa.org)"
+    location:
+      - Adelaide Metropolitan
+    phone: 
+      - (08) 8342 1800 or 1300 886 220 for country callers
+    address:
+      - Adelaide Office, 10 Pitt Street, Adelaide SA 5000
+      - Unit 2 59 Main North Road, Medindie Gardens SA 5081
+      - Unit 2, 2B Morialta Drive, Smithfield SA 5114
+      - Unit 3, 107 Dyson Road, Christies Beach SA 5165
+    hard issue:
+      - Financial
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: "[Lifeline]( https://www.lifeline.org.au/)"
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 13 11 14
+    address:
+      - Online
+    hard issue:
+      - Emotional
+      - Homelessness
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
