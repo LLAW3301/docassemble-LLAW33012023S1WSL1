@@ -1,0 +1,213 @@
+---
+include:
+  - WSL_Questions.yml
+  - WSL_List_of_Services.yml
+  - WSL_List_of_Services_Code.yml
+  - WSL_CSS_Code.yml
+---
+metadata:
+  title: |
+    WestSide Community Lawyers
+  short title: |
+    WSL
+  authors:
+    - name: Hannah Esmaeili
+    - name: Rosa Lindon
+    - name: Richard Hancock
+    - name: Tyson Young
+  organisation: Flinders University
+  show login: False
+  exit url: http://www.bom.gov.au/sa/
+  exit label: Safe Exit
+---
+objects:
+  - wsllogo: DAStaticFile.using(filename='wsllogo.png')
+---
+features:
+  css: WSL_CSS_Website.css
+  debug: False
+  hide standard menu: True
+  progress bar: True
+  show progress bar percentage: True
+  navigation back button: True
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + wsllogo.url_for() + '" style="height: 100px;">')
+---
+# Welcome screen
+mandatory: true
+question: WestSide Community Lawyers Service Directory
+subquestion: |
+
+  Welcome to the Westside Community Lawyers (WSL) service directory. This application will ask a series of questions and provide you with a list of the relevant services for your needs.
+ 
+  <br><div class='welcome'><h5><center>***Privacy Statement***</center></h5> 
+  
+  WSL aims to protect your data. Your data will not be stored. Data will be deleted at the end of the application. Data is gathered only to create a list of services for you.
+  
+  <p>For further information, please refer to the Westside Community Lawyers <a style="color: rgb(19, 50, 98);" href="https://westsidelawyers.net/wp-content/uploads/2021/09/WestSide-Lawyers-Privacy-Policy-2.pdf">Privacy Statement</a>.</p>
+  
+  <br><div class='welcome'><h5><center>***Disclamer***</center></h5>
+  > A safe exit button is provided to you in case you need an emergency exit from the website. This is displayed in yellow in the question screens. The 'I do not agree' button will also direct you to the WSL website.
+  
+  >  - This application should not be used as professional legal advice.
+  
+  >  - This application will only find services in SA.
+  
+  >  - This application will ask personal questions. Do you agree?
+
+  
+buttons:  
+  - I agree: continue
+  - I do not agree: exit
+    url: https://westsidelawyers.net/
+    
+---
+# Final Screen
+mandatory: true
+question: Thank you for completing this application. Here are a list of services.
+subquestion: |
+
+  % if len(WSLdisplay_specific_gender) > 0:
+  #### Gender-specific services
+  
+  ${WSLdisplay_gender_list}
+  %endif
+  
+  % if len(WSLdisplay_indigenous) > 0:
+  #### Services for Aboriginal and Torres Strait Islander people
+  
+  ${WSLdisplay_indigenous_list}
+  % endif
+  
+  % if len(WSLdisplay_leftovers) > 0:
+  #### General Services
+  
+  ${WSLdisplay_leftover_list}
+  % endif
+  
+  #### Here are your answers
+  <hr>
+  
+  Questions                           |Answers
+  ------------------------------------|--------
+  Location                            | ${display_WSLlocation}
+  Legal Issue                         | ${display_WSLhardissue}
+  Gender                              | ${WSLgender}
+  Aboriginal or Torres Strait Islander| ${WSLindigenous}
+
+progress: 100
+buttons:
+  - Exit: exit
+    url: https://westsidelawyers.net/
+  - Restart: restart
+---  
+# Table Block
+table: WSLdisplay_gender_list
+rows: WSLdisplay_specific_gender
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['display address']
+  - Phone: |
+      row_item['display phone']
+  - This service specialises in: |
+      row_item['display hard issue']
+---
+table: WSLdisplay_indigenous_list
+rows: WSLdisplay_indigenous
+
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['display address']
+  - Phone: |
+      row_item['display phone']
+  - This service specialises in: |
+      row_item['display hard issue']
+---
+table: WSLdisplay_leftover_list
+rows: WSLdisplay_leftovers
+columns:
+  - Name of Service: |
+      row_item['name']
+  - Address: |
+      row_item['display address']
+  - Phone: |
+      row_item['display phone']
+  - This service specialises in: |
+      row_item['display hard issue']
+---
+# Display hardships as a bullet list.  If there
+# is only one hardsgip, then don't have a single
+# bullet list.
+# We save our bullet list to display in a key called
+# 'display legal issue' and we use that in our table.
+code: |
+  # Initialise the display with an empty string.  We'll use
+  # a temp variable here because it's easier to read
+  # The '<ul>' and '<li>' tags that you see are HTML commands
+  # to make a bullet list.  
+  WSLtemp_list = '<ul>'
+
+  # Now add each item to the string as a markdown bullet list item
+  for an_issue in WSL_Services[i]['hard issue']:
+    if an_issue == 'Other':
+      an_issue = 'General Services'
+    WSLtemp_list = '{}<li>{}</li>'.format(WSLtemp_list, an_issue)
+
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  # Now we've added each item, we can assign the temp variable
+  # to the 'real' variable we want displayed
+  WSL_Services[i]['display hard issue'] = WSLtemp_list
+---
+code: |
+  WSLtemp_list = '<ul>'
+
+  for an_issue in WSL_Services[i]['location']:
+    WSLtemp_list = '{}<li>{}</li>\n'.format(WSLtemp_list, an_issue)
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  WSL_Services[i]['display location'] = WSLtemp_list
+---
+# This code does something similar but it works on the
+# WSLhardissue checkbox instead of the data structure
+code: |
+  WSLtemp_list = '<ul>'
+  for an_issue in WSLhardissue.true_values():
+    if an_issue == 'Other':
+      an_issue = 'General Services'
+    WSLtemp_list = '{}<li>{}</li>'.format(WSLtemp_list, an_issue)
+
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  display_WSLhardissue = WSLtemp_list
+---
+# Bullet list code for location in checkbox
+code: |
+  WSLtemp_list = '<ul>'
+  for an_issue in WSLlocation.true_values():
+    WSLtemp_list = '{}<li>{}</li>'.format(WSLtemp_list, an_issue)
+
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  display_WSLlocation = WSLtemp_list
+---
+# Bullet list for phone numbers
+code: |
+  WSLtemp_list = '<ul>'  
+  
+  for an_issue in WSL_Services[i]['phone']:
+    WSLtemp_list = '{}<li>{}</li>\n'.format(WSLtemp_list, an_issue)
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  WSL_Services[i]['display phone'] = WSLtemp_list
+---
+# Bullet list for address
+code: |
+  WSLtemp_list = '<ul>'  
+  
+  for an_issue in WSL_Services[i]['address']:
+    WSLtemp_list = '{}<li>{}</li>\n'.format(WSLtemp_list, an_issue)
+  WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
+  WSL_Services[i]['display address'] = WSLtemp_list
+---
