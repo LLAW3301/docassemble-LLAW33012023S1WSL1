@@ -3,7 +3,8 @@
 variable name: WSL_Services
 use objects: True
 data:
-  - name: "[Hutt St Centre](https://www.huttstcentre.org.au/)"
+  - name: Hutt St Centre
+    website: https://www.huttstcentre.org.au/
     location:
       - -	Adelaide Metropolitan
     phone: 
@@ -20,7 +21,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[Relationships Australia](https://www.rasa.org.au/)"
+  - name: Relationships Australia
+    website: https://www.rasa.org.au/
     location:
       - Adelaide Metropolitan
       -	Eyre Peninsula 
@@ -40,7 +42,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[Beyond Blue](https://www.beyondblue.org.au/)"
+  - name: Beyond Blue
+    Website: https://www.beyondblue.org.au/
     location:
       - Adelaide Metropolitan
       - Barossa Region
@@ -63,7 +66,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[Homelessness Legal Service](https://www.justicenet.org.au/what-we-do/homeless-legal)"
+  - name: Homelessness Legal Service
+    website: https://www.justicenet.org.au/what-we-do/homeless-legal
     location:
       - Adelaide Metropolitan
     phone: 
@@ -80,7 +84,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[JusticeNetSA](https://www.justicenet.org.au)"
+  - name: JusticeNetSA
+    website: https://www.justicenet.org.au
     location:
       - North
       - East
@@ -102,7 +107,8 @@ data:
       - No
       - Yes
       - Do not wish to say
-  - name: "[Inspiring Determination Independence Growth and Opportunities (INDIGO)](https://www.wlssa.org.au/copy-of-the-womens-specialist-progr)"
+  - name: Inspiring Determination Independence Growth and Opportunities (INDIGO)
+    website: https://www.wlssa.org.au/copy-of-the-womens-specialist-progr
     location:
       - Adelaide Metropolitan
     phone: 
@@ -118,7 +124,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[Family Violence Legal Service Aboriginal Corporation SA](http://www.fvlsac.org.au)"
+  - name: Family Violence Legal Service Aboriginal Corporation SA
+    website: http://www.fvlsac.org.au
     location:
       - Clare Region
     phone: 
@@ -139,7 +146,8 @@ data:
     indigenous:
       - Yes
       - Do not wish to say
-  - name: "[Consumer Credit Law Centre South Australia](http://consumercreditsa.org)"
+  - name: Consumer Credit Law Centre South Australia
+    website: http://consumercreditsa.org
     location:
       - Adelaide Metropolitan
     phone: 
@@ -159,7 +167,8 @@ data:
       - Yes
       - No
       - Do not wish to say
-  - name: "[Lifeline]( https://www.lifeline.org.au/)"
+  - name: Lifeline
+    website: https://www.lifeline.org.au/
     location:
       - Adelaide Metropolitan
       - Barossa Region
@@ -175,6 +184,274 @@ data:
     hard issue:
       - Emotional
       - Homelessness
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: HelpMe
+    website: https://kidshelpline.com.au/tools/apps/help-me
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1800 55 1800
+    address:
+      - Online
+    hard issue:
+      - Emotional
+      - Homelessness
+      - Relationship
+      - Other
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Sunny App
+    website: https://www.1800respect.org.au/sunny
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1800 737 732
+    address:
+      - Online
+    hard issue:
+      - Relationship
+    gender:
+      - Female
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Shelter App
+    website: https://www.shelterapp.org
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 
+    address:
+      - Online
+    hard issue:
+      - Homelessness
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Aboriginal Services Directory
+    website: https://aboriginalservicesdirectory.com.au/?fbclid=IwAR2KC2SRxSiy3RuGhCTXliNtntsMgx3wpxY2iGmanb_AISDFNRomkNXkF8w
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1800 636 368
+    address:
+      - 1/47 Tynte Street, North Adelaide
+    hard issue:
+      - Homelessness
+      - Emotional 
+      - Relationship
+      - Other
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+  - name: Daisy App
+    website: https://www.1800respect.org.au/daisy
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1800 737 732
+    address:
+      - Online
+    hard issue:
+      - Homelessness
+      - Emotional 
+      - Relationship
+      - Financial
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Headspace
+    website: https://www.headspace.com/headspace-meditation-app
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 
+    address:
+      - Online
+    hard issue:
+      - Emotional 
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Goodbudget
+    website: https://goodbudget.com
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 
+    address:
+      - Online
+    hard issue:
+      - Financial 
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Services Australia
+    website: https://www.servicesaustralia.gov.au/crisis-payment
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 312 307
+    address:
+      - 132-136 Henley Beach Road, Torrensville 
+    hard issue:
+      - Financial 
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Believe Housing Australia
+    website: https://believehousing.org.au/housing-options/
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - 1800 688 000
+    address:
+      - Regency Park office; 491-499 South Road, Regency Park SA 5010 
+      - Elizabeth Grove office; Shop 1, 60 Fairfield Road, Elizabeth Grove SA 5112
+      - Mount Gambier office; 70-72 White Avenue, Mount Gambier SA 5290 
+    hard issue:
+      - Homelessness
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Relationships Australia
+    website: https://www.rasa.org.au/
+    location:
+      - Adelaide Metropolitan
+      - Eyre Peninsula 
+    phone: 
+      - Adelaide metropolitan; (08) 8418 2500 
+      - Eyre Peninsula; 1800 310 310 
+    address:
+      - Adelaide metropolitan; 151 South Terrace, Adelaide  
+      - Eyre Peninsula; 54 Commercial Road, Port Augusta 
+    hard issue:
+      - Relationship
+    gender:
+      - Female
+      - Male
+      - Other
+    indigenous:
+      - Yes
+      - No
+      - Do not wish to say
+  - name: Uniting SA
+    website: https://unitingsa.com.au/
+    location:
+      - Adelaide Metropolitan
+      - Barossa Region
+      - Clare Region
+      - Yorke Peninsula
+      - Eyre Peninsula 
+      - Flinders Rangers Region
+      - Outback
+    phone: 
+      - (08) 0440 2200
+    address:
+      - 70 Dale Street, Port Adelaide  
+    hard issue:
+      - Financial 
     gender:
       - Female
       - Male
