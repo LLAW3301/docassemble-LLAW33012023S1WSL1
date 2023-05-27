@@ -1,0 +1,66 @@
+/* This file is a CSS or Cascading Style Sheet.  It is how
+   the look and feel of web pages is controlled.  You don't need know
+   too much about how CSS works.  We only use a little of it to contol
+   the look and feel of our apps.  If you are interested in CSS there
+   are many online references 
+   (eg: https://developer.mozilla.org/en-US/docs/Web/CSS)
+*/
+
+/* This is a style or a 'class'.  This class is part of a 'Bootstrap' theme.
+    Docassemble makes use of Bootstrap themes.  Bootstrap is what provides the
+    navbar at the top, the style of the buttons.  It is also what allows the
+    website to run on computers and iPads and smartphones.  We can customise
+    elements of the theme to suit our needs.  That is what the next few classes
+    do.  For more information on Bootstrap check out https://getbootstrap.com
+*/
+.navbar{
+    /* All colours in IT are set using RGB (ie: Red, Green, Blue) values.
+       Each value of red, green and blue is a number between 0 and 255.
+       Comon colour values are:
+       - red:    rgb(255, 0, 0)
+       - blue:   rgb(0, 255, 0)
+       - green:  rgb(0, 0, 255)
+       - yellow: rgb(0, 255, 255)
+       - black:  rgb(0, 0, 0)
+       - white:  rgb(255, 255, 255)
+       The whole spectrum of colours can be represented by any combination
+       of RGB values.  To choose a colour you need to know its RGB value.
+       To work that out, use MS Paint or Excel to set a colour.  Most software
+       comes with colour picking software that will show you the RGB values
+       for any colour you pick
+    */
+    background-color: rgb(255,255,255) !important;
+}
+.navbar .navbar-brand{
+    color : #000;
+    font-weight: bolder;
+    font-size: 2.0em;
+}
+.navbar .navbar-brand:hover{
+    color: #000;
+}
+
+.navbar .nav-item a{
+    color: #000 !important;
+}
+
+.navbar .dropdown-menu{
+    /*  the rgba() function works just like rgb in that
+        it sets a colour.  But the fourth element sets an
+        'alpha' or transaparency value.  Here we are saying
+        to set the transparency to 30%
+    */
+    background-color: rgba(255,255,255,0.3);
+}
+.dropdown-item:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.navbar form button{
+    background-color: rgba(255,255,255,0.3);
+    color:#FFF;
+    /* setting the border to 0 disables the border around the button */
+    border:0;
+}
+.navbar form button:hover{
+    background-color: rgba(255,255,255,0.3);
+}
