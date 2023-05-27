@@ -1,0 +1,180 @@
+.navbar{
+    background-color: rgb(255,255,255) !important;
+}
+
+/* This sets the colour of the 'Source' link in the navbar */
+.navbar .nav-item a {
+    color: rgb(0,0,0) !important;
+}
+
+/* dropdown-menu manages the right-hand menu (where we access the Playground
+   amongst other things) */
+.navbar .dropdown-menu {
+    /*  the rgba() function works just like rgb in that
+        it sets a colour.  But the fourth element sets an
+        'alpha' or transaparency value.  Here we are saying
+        to set the transparency to 30%
+    */
+    background-color: rgba(25,64,86,0.3);
+}
+
+/* Sets properties for when hovering over a menu item in the 
+   drop-down menu */
+.dropdown-item:hover {
+    background-color: rgba(255,211,0,0.5);
+}
+
+/* Line below the navbar*/
+.navbar{
+  border-bottom:8px
+  solid rgba(255,255,255);
+  padding: 0px !important;
+}
+
+/* adjusting navbar height */
+.da-pad-for-navbar         { padding-top: 150px; }
+.da-top-for-navbar         { top: 150px;         }
+
+/* Sets the appearnce for the 'Continue' button... */
+.btn-primary {
+  color: rgb(255,255,255);
+  background-color: rgb(51,118,232);
+  border-color: rgb(51,118,232);
+}
+
+/* ...and when hovering over it */
+.btn-primary:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(40,95,187);
+  border-color: rgb(40,95,187);
+}
+/* Appearance of 'Safe-Exit' button */
+.btn-warning {
+   color: rgb(255,255,255);
+   background-color: rgb(19,50,98);
+   border-color: rgb(19,50,98);
+}
+
+/* ...and when hovering over it */
+.btn-warning:hover {
+   color: rgb(255,255,255);
+   background-color: rgb(27,67,132);
+   border-color: rgb(27,67,132);
+}
+
+/* Appearance of 'Exit' button */
+.btn-danger {
+  color: rgb(255,255,255);
+  background-color: rgb(27,67,132);
+  border-color: rgb(27,67,132);
+  font-family: Cabin, arial, sans-serif;
+}
+
+/* Back button on Navbar */
+.navbar-brand{
+  font-family: Cabin, arial, sans-serif;
+  font-size: 15px;
+  margin: 3px;
+  padding: 3px;
+}
+
+/* This sets the colour of the 'Safe Exit' link in the navbar */
+.navbar .nav-item a{
+    font-family: Cabin, arial, sans-serif;
+    font-size: 15px;
+    color: #000000 !important;
+    border: #f22727 !important;
+    background-color: #f22727 !important;
+    border-radius: 4px !important;
+}
+
+.navbar .nav-item a:hover {
+    background-color: rgba(255, 0, 0, 0.8) !important;
+    opacity: 0.8;
+}
+
+/* font colours and style */
+.row {
+  color: #2c548f;
+  font-family: Arial
+}
+
+.da-subquestion {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: Cabin, arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.btn-light {
+  color: rgb(0,0,0);
+}
+.btn-light:hover {
+  color: rgb(40,95,187);
+}
+h2 {
+  color: rgb(40,95,187);
+}
+
+h4 {
+  font-family: Cabin, arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;  
+}
+
+p { 
+  font-family: Cabin, arial, sans-serif;
+  color: #58595B;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justify;
+}
+
+strong {
+  font-family: Cabin, arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar{
+  background-color: rgb(40,95,187);
+  font-family: Cabin, arial, sans-serif;
+  color: rgb(255,255,255);
+}
+
+/* Service Font */
+th{
+  font-family: Cabin, arial, sans-serif;
+  color:Black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+td{
+  font-family: Cabin, arial, sans-serif;
+  color: #58595B;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Line Height */
+li{
+  line-height: 1.5;
+}
+  
+}

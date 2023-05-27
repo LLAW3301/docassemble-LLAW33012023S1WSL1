@@ -1,6 +1,6 @@
 ---
 include:
-  - WSL_Welcome_And_End_Screen.yml
+  - WSL_Main.yml
 ---
 default screen parts:
   post: |

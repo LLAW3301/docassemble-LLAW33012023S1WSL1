@@ -1,22 +1,64 @@
 ---
 # location question
-question: Where are you located?
+question: |
+  Where are you located?
 subquestion: |
   Please select the location or locations that you are looking for services in.
   
-  You may select more than one location.
+  You may select more than one location. *Click on the question mark for sub-locations*
   
 fields:
   - no label: WSLlocation
     datatype: checkboxes
     choices:
-      - <b>Metropolitan Adelaide</b><br><ul class="a"><li>Charles Sturt</li><li>Port Adelaide Enfield</li></ul>: Metropolitan Adelaide
-      - <b>Barossa Region</b><br><ul class="a"><li>Light</li><li>Lyndoch</li><li>Nurriootpa</li><li>Tanunda</li></ul>: Barossa Region
-      - <b>Clare Region</b><br><ul class="a"><li>Clare</li><li>Gilbert Valley</li><li>Goyder</li><li>Jamestown</li><li>Mallala</li><li>Wakefield</li></ul>: Clare Region
-      - <b>Yorke Peninsula</b><br><ul class="a"><li>Barunga West</li><li>Wallaroo</li><li>Kadina</li><li>Moonta</li></ul>: Yorke Peninsula
-      - <b>Eyre Peninsula</b><br><ul class="a"><li>Ceduna</li><li>Cleve</li><li>Elliston</li><li>Franklin Harbour</li><li>Kimba</li><li>Le Hunte</li><li>Port Lincoln</li></ul>: Eyre Peninsula
-      - <b>Flinders Rangers Region</b><br><ul class="a"><li>Flinders Rangers</li><li>Mt Remarkable</li><li>Peterborough</li><li>Port Augusta</li><li>Port Pirie</li><li>Whyalla</li></ul>: Flinders Rangers Region
-      - <b>Outback</b><br><ul class="a"><li>APY Lands</li><li>Cooper Pedy</li><li>Roxby Downs</li><li>Nullabor</li></ul>: Outback
+      - Metropolitan Adelaide: Metropolitan Adelaide
+        help: |
+          - Adelaide
+          - Charles Sturt
+          - Port Adelaide, Enfield
+          - Metropolitain Adelaide
+      - Barossa Region: Barossa Region
+        help: |
+         - Lyndoch
+         - Nuriootpa
+         - Tanunda
+      - Clare Region: Clare Region
+        help: |
+          - Claire
+          - Gilbert Valley
+          - Goyder
+          - Jamestown
+          - Mallala
+          - Wakefield 
+      - Yorke Peninsula: Yorke Peninsula
+        help: |
+          - Barunga West
+          - Wallaroo
+          - Kadina
+          - Moonta
+      - Eyre Peninsula: Eyre Peninsula
+        help: |
+          - Ceduna
+          - Cleve
+          - Elliston
+          - Franklin Harbour
+          - Kimba
+          - Le Hunte
+          - Port Lincon
+      - Flinders Rangers Region: Flinders Rangers Region
+        help: |
+          - Flinders Rangers
+          - Mt Remarkable
+          - Peterborough
+          - Port Augusta
+          - Port Pirie
+          - Whyalla
+      - Outback: Outback
+        help: |
+          - APY Lands
+          - Cooper Pedy
+          - Roxby Downs
+          - Nullabor
     none of the above: False
 right: |
  [FILE mapfinal.png, 400px]
@@ -27,6 +69,7 @@ action buttons:
     color: warning
     icon: sign-out-alt
 ---
+#hardship question
 question: What type of hardship are you experiencing?
 subquestion: |
   
@@ -43,13 +86,14 @@ fields:
       - Other: Other
     none of the above: False
 
-progress: 40
+progress: 40  
 action buttons:
   - label: Exit
     action: https://westsidelawyers.net/
     color: warning
     icon: sign-out-alt
 ---
+#gender question
 question: What is your gender?
 fields:
   - no label: WSLgender
@@ -69,6 +113,7 @@ action buttons:
     color: warning
     icon: sign-out-alt
 ---
+#ATSI question
 question: Do you identify as Aboriginal or Torres Strait Islander?
 fields:
   - no label: WSLindigenous
