@@ -43,7 +43,7 @@ data:
       - No
       - Do not wish to say
   - name: Beyond Blue
-    Website: https://www.beyondblue.org.au/
+    website: https://www.beyondblue.org.au/
     location:
       - Adelaide Metropolitan
       - Barossa Region

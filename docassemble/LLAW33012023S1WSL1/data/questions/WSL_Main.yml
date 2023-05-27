@@ -26,6 +26,8 @@ images:
   financial: financialpic.png
   homeless: homelesspic.png
   other: otherpic.png
+  male: male.png
+  female: female.png
 ---
 objects:
   - wsllogo: DAStaticFile.using(filename='wsllogo.png')
@@ -78,38 +80,43 @@ code: |
 ---
 # Final Screen
 mandatory: true
-question: Thank you for completing this application. Here are a list of services.
+question: Custom List of Applications
 subquestion: |
 
   % if len(WSLdisplay_specific_gender) > 0:
-  #### Gender-specific services
+  #### Gender-specific Applications
   
   ${WSLdisplay_gender_list}
   %endif
   
   % if len(WSLdisplay_indigenous) > 0:
-  #### Services for Aboriginal and Torres Strait Islander people
+  #### Applications for Aboriginal and Torres Strait Islander People
   
   ${WSLdisplay_indigenous_list}
   % endif
   
   % if len(WSLdisplay_leftovers) > 0:
-  #### General Services
+  #### General Applications
   
   ${WSLdisplay_leftover_list}
   % endif
   
-  #### Here are your answers
+  #### Here are Your Answers
   <hr>
   
   Questions                           |Answers
   ------------------------------------|--------
   Location                            | ${display_WSLlocation}
-  Legal Issue                         | ${display_WSLhardissue}
+  Hardship                            | ${display_WSLhardissue}
   Gender                              | ${WSLgender}
   Aboriginal or Torres Strait Islander| ${WSLindigenous}
 
 progress: 100
+attachment:
+  - name: A hello world document
+    docx template file: WSL_ListofServices_Template.docx
+    description: |
+      A document with a classic message
 buttons:
   - Exit: exit
     url: https://westsidelawyers.net/
@@ -153,10 +160,10 @@ columns:
       row_item['display hard issue']
 ---
 # Display hardships as a bullet list.  If there
-# is only one hardsgip, then don't have a single
+# is only one hardship, then don't have a single
 # bullet list.
 # We save our bullet list to display in a key called
-# 'display legal issue' and we use that in our table.
+# 'display issue' and we use that in our table.
 code: |
   # Initialise the display with an empty string.  We'll use
   # a temp variable here because it's easier to read
@@ -177,7 +184,6 @@ code: |
 ---
 code: |
   WSLtemp_list = '<ul>'
-
   for an_issue in WSL_Services[i]['location']:
     WSLtemp_list = '{}<li>{}</li>\n'.format(WSLtemp_list, an_issue)
   WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
@@ -191,7 +197,6 @@ code: |
     if an_issue == 'Other':
       an_issue = 'General Services'
     WSLtemp_list = '{}<li>{}</li>'.format(WSLtemp_list, an_issue)
-
   WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
   display_WSLhardissue = WSLtemp_list
 ---
@@ -221,3 +226,4 @@ code: |
     WSLtemp_list = '{}<li>{}</li>\n'.format(WSLtemp_list, an_issue)
   WSLtemp_list = '{}</ul>'.format(WSLtemp_list)
   WSL_Services[i]['display address'] = WSLtemp_list
+---

@@ -6,3 +6,4 @@ This application assists West Side Lawyers and their clients access relevant, no
 
 Hannah Esmaeili, esma0019@flinders.edu.au
 Rosa Lindon, lind0217@flinders.edu.au
+Tyson Young, youn0440@flinders.edu.au
