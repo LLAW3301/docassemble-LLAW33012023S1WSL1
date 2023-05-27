@@ -104,9 +104,11 @@ fields:
   - no label: WSLgender
     datatype: radio
     choices:
-      - Male: Male
-      - Female: Female
-      - Other: other
+      - "Male": Male
+        image: male
+      - "Female": Female
+        image: female
+      - "Other/prefer not to say": other
       
 progress: 60
 action buttons:
