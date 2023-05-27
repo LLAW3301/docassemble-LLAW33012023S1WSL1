@@ -54,7 +54,10 @@
    background-color: rgb(19,50,98);
    border-color: rgb(19,50,98);
 }
-
+/* .Appearance of multiselect */
+.btn-light {
+  font-size: 17px !important
+}
 /* ...and when hovering over it */
 .btn-warning:hover {
    color: rgb(255,255,255);
@@ -95,7 +98,7 @@
 
 /* font colours and style */
 .row {
-  color: #2c548f;
+  color: rgb(0,0,0);
   font-family: Arial
 }
 
@@ -115,15 +118,15 @@ h1 {
   color: rgb(0,0,0);
 }
 .btn-light:hover {
-  color: rgb(40,95,187);
+  color: rgb(0,0,0);
 }
 h2 {
-  color: rgb(40,95,187);
+  color: rgb(0,0,0);
 }
 
 h4 {
   font-family: Cabin, arial, sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;  
@@ -157,8 +160,8 @@ strong {
 th{
   font-family: Cabin, arial, sans-serif;
   color:Black;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 550;
   line-height: 20px;
   text-align: center;
 }
@@ -169,12 +172,19 @@ td{
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Line Height */
 li{
   line-height: 1.5;
 }
-  
+
+h5 {
+  font-family: Cabin, arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;  
+  color: #2c548f;
 }
