@@ -1,5 +1,5 @@
 # docassemble.LLAW33012023S1WSL
-<br>
+
 ## LegallyFit for WestSide Community Lawyers
 
 This application assists WestSide Community Lawyers and their clients to access relevant, non-legal resources specific to the clients needs. <br><br>
