@@ -4,7 +4,7 @@ This application assists WestSide Community Lawyers and their clients to access 
 
 ## Authors
 
-Hannah Esmaeili, esma0019@flinders.edu.au
-Rosa Lindon, lind0217@flinders.edu.au
-Tyson Young, youn0440@flinders.edu.au
+Hannah Esmaeili, esma0019@flinders.edu.au <br>
+Rosa Lindon, lind0217@flinders.edu.au <br>
+Tyson Young, youn0440@flinders.edu.au <br>
 
