@@ -46,7 +46,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012023S1WSL1',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# docassemble.LLAW33012023S1WSL\r\n\r\nThis application assists West Side Lawyers and their clients access relevant, not-legal resources specific to the clients needs. The application filters a directory of applications based in the information provided by the client and provides a list of the most relevnat applications based on the users needs, location, gender and Aboriginal or Torres Strait Islander identification.\r\n\r\n## Author\r\n\r\nHannah Esmaeili, esma0019@flinders.edu.au\r\nRosa Lindon, lind0217@flinders.edu.au\r\n',
+      long_description='# docassemble.LLAW33012023S1WSL\r\n\r\nThis application assists West Side Lawyers and their clients access relevant, not-legal resources specific to the clients needs. The application filters a directory of applications based in the information provided by the client and provides a list of the most relevnat applications based on the users needs, location, gender and Aboriginal or Torres Strait Islander identification.\r\n\r\n## Author\r\n\r\nHannah Esmaeili, esma0019@flinders.edu.au\r\nRosa Lindon, lind0217@flinders.edu.au\r\nTyson Young, youn0440@flinders.edu.au',
       long_description_content_type='text/markdown',
       author='Hannah Esmaeili',
       author_email='esma0019@flinders.edu.au',

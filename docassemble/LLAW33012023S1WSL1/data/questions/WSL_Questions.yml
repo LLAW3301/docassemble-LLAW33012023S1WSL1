@@ -59,9 +59,9 @@ fields:
           - Cooper Pedy
           - Roxby Downs
           - Nullabor
-    none of the above: False
-right: |
- [FILE mapfinal.png, 400px]
+    none of the above: True
+Right: |
+ [FILE WSLmap.png, 470px]
 progress: 20
 action buttons:
   - label: Exit
@@ -74,16 +74,21 @@ question: What type of hardship are you experiencing?
 subquestion: |
   
   You may select more than one hardship.
-
+  
 fields:
   - no label: WSLhardissue
     datatype: checkboxes
     choices:
-      - Emotional Hardship: Emotional
-      - Relationships (Divorce, Domestic violence): Relationship
-      - Financial (personal debt, bankrupcy, mortgage): Financial
-      - Homelessness: Homelessness
-      - Other: Other
+      - "Emotional Hardship": Emotional
+        image: emotional
+      - "Relationships (Divorce, Domestic violence)": Relationship
+        image: relation
+      - "Financial (personal debt, bankrupcy, mortgage)": Financial
+        image: financial
+      - "Homelessness": Homelessness
+        image: homeless
+      - "Other": Other
+        image: other
     none of the above: False
 
 progress: 40  
@@ -103,9 +108,8 @@ fields:
         image: male
       - "Female": Female
         image: female
-      - "Other": other
-        image: other
-
+      - "Other/prefer not to say": other
+      
 progress: 60
 action buttons:
   - label: Exit
