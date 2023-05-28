@@ -9,4 +9,4 @@ The application filters a directory of services/applications based on the inform
 * Hannah Esmaeili, esma0019@flinders.edu.au <br>
 * Rosa Lindon, lind0217@flinders.edu.au <br>
 * Tyson Young, youn0440@flinders.edu.au <br>
-
+* Richard Hancock, hanc0152@flinders.edu.au<br>
