@@ -112,11 +112,12 @@ subquestion: |
   Aboriginal or Torres Strait Islander| ${WSLindigenous}
 
 progress: 100
-attachment:
-  - name: A hello world document
-    docx template file: WSL_ListofServices_Template.docx
-    description: |
-      A document with a classic message
+#Couldn't get Template working, keeping code here once template is working again.
+#attachment:
+ # - name: LegallyFit Application Directory Summary
+ #   docx template file: WSL_ListofServices_Template.docx
+ #   description: |
+ #    Please find attached your customised list of Applications from LegallyFit
 buttons:
   - Exit: exit
     url: https://westsidelawyers.net/
