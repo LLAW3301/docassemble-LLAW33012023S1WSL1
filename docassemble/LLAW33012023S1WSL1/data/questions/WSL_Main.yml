@@ -46,23 +46,23 @@ code: |
 ---
 # Welcome screen
 mandatory: true
-question: WestSide Community Lawyers Service Directory
+question: LegallyFit
 subquestion: |
 
-  Welcome to the Westside Community Lawyers (WSL) service directory. This application will ask a series of questions and provide you with a list of the relevant services for your needs.
+  Welcome to LegallyFit, the Westside Community Lawyers Application Directory. This application will ask a series of questions and provide you with a list of the relevant applications for your needs.
  
   <br><div class='welcome'><h5><center>***Privacy Statement***</center></h5> 
   
-  WSL aims to protect your data. Your data will not be stored. Data will be deleted at the end of the application. Data is gathered only to create a list of services for you.
+  WestSide Community Lawyers aims to protect your data. Your data will not be stored. The data you provide will be deleted at the end of the application. Data is gathered only to ensure the applications reccomended are relevant to your needs.
   
   <p>For further information, please refer to the Westside Community Lawyers <a style="color: rgb(19, 50, 98);" href="https://westsidelawyers.net/wp-content/uploads/2021/09/WestSide-Lawyers-Privacy-Policy-2.pdf">Privacy Statement</a>.</p>
   
-  <br><div class='welcome'><h5><center>***Disclamer***</center></h5>
-  > A safe exit button is provided to you in case you need an emergency exit from the website. This is displayed in yellow in the question screens. The 'I do not agree' button will also direct you to the WSL website.
+  <br><div class='welcome'><h5><center>***Disclaimer***</center></h5>
+  > A safe exit button is provided to you in case you need an emergency exit from the website. This is displayed in yellow in the question screens. The 'I do not agree' button will also direct you to the WestSide Community Lawyers website.
   
   >  - This application should not be used as professional legal advice.
   
-  >  - This application will only find services in SA.
+  >  - This application will only find applications relevant to users located in South Australia.
   
   >  - This application will ask personal questions. Do you agree?
 
