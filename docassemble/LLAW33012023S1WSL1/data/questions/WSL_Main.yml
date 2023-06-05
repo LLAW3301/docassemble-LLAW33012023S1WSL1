@@ -100,7 +100,6 @@ subquestion: |
   
   ${WSLdisplay_leftover_list}
   % endif
-  
   #### Here are Your Answers
   <hr>
   
